@@ -1,0 +1,56 @@
+# General
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Dependencies
+node_modules/
+bower_components/
+
+# Build output
+dist/
+build/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+venv/
+.venv/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# .NET
+bin/
+obj/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+*.swp
+*~
+.github/
+.ipynb_checkpoints/
