@@ -1,9 +1,9 @@
 # Semillero de Investigación 2026
-Este repositorio se enfocará en temas de semillero de investigación - Ingeniería de sistemas
+Repositorio del semillero enfocado en proyectos de ciencia de datos y machine learning aplicados a análisis de datos biológicos.
 
 ## Descripción
 
-Repositorio dedicado a proyectos de ciencia de datos y machine learning del semillero de investigación.
+Actualmente el proyecto incluye un notebook de análisis preliminar para el dataset **High-Throughput Algae Cell Detection** (formato YOLO), con exploración de estructura, carga de anotaciones y visualización de resultados.
 
 ## Configuración del Entorno
 
@@ -12,6 +12,8 @@ Repositorio dedicado a proyectos de ciencia de datos y machine learning del semi
 - Python 3.8 o superior
 - pip (gestor de paquetes de Python)
 - Jupyter Notebook
+- Cuenta de Kaggle con acceso al dataset
+- Dataset local en `nuevo-dataset/high-throughput-algae-cell-detection` (descarga automática o manual)
 
 ### Instalación
 
@@ -23,13 +25,13 @@ Repositorio dedicado a proyectos de ciencia de datos y machine learning del semi
 
 2. **Crear un entorno virtual (recomendado)**
    ```bash
-   python -m venv venv
+   python -m venv .venv
    
    # En Windows
-   venv\Scripts\activate
+   .venv\Scripts\activate
    
    # En Linux/Mac
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 
 3. **Instalar las dependencias**
@@ -48,11 +50,37 @@ Las librerías principales utilizadas en este proyecto son:
 - **jupyter**: Entorno de notebooks interactivos
 - **scikit-learn**: Machine learning (opcional)
 
+El notebook de `nuevo-dataset` también usa:
+
+- **Pillow**: Lectura y manejo de imágenes
+- **PyYAML**: Lectura del archivo de configuración `data.yaml`
+- **kagglehub**: Descarga del dataset desde Kaggle
+
 Para instalar manualmente las dependencias básicas:
 
 ```bash
-pip install pandas numpy matplotlib seaborn jupyter
+pip install pandas numpy matplotlib seaborn jupyter pillow pyyaml kagglehub
 ```
+
+### Preparación del Dataset
+
+El notebook incluye una celda inicial que intenta descargar el dataset y copiarlo en la ruta estándar del repositorio:
+
+`nuevo-dataset/high-throughput-algae-cell-detection`
+
+#### Opción A: Descarga automática (recomendada)
+
+1. Configurar credenciales de Kaggle.
+2. Ejecutar la celda de preparación del dataset en el notebook.
+3. Verificar que exista la carpeta `nuevo-dataset/high-throughput-algae-cell-detection`.
+
+#### Opción B: Carga manual (si falla red o DNS)
+
+Si aparece un error de conexión con `api.kaggle.com`:
+
+1. Descargar el dataset manualmente desde Kaggle en un entorno con internet.
+2. Copiar la carpeta descargada en `nuevo-dataset/high-throughput-algae-cell-detection`.
+3. Reejecutar la celda de preparación para validar ruta y continuar.
 
 ## Uso
 
@@ -64,27 +92,61 @@ pip install pandas numpy matplotlib seaborn jupyter
    jupyter notebook
    ```
 3. El navegador se abrirá automáticamente con la interfaz de Jupyter
-4. Abrir el archivo `inicializacion_basica.ipynb` para comenzar
+4. Abrir el archivo `nuevo-dataset/inicialización_datos_nuevodataset.ipynb` para comenzar
 
-### Estructura del Notebook de Inicialización
+### Flujo del Notebook de Nuevo Dataset
 
-El notebook `inicializacion_basica.ipynb` incluye:
+El notebook `nuevo-dataset/inicialización_datos_nuevodataset.ipynb` incluye:
 
 - Importación de librerías básicas
 - Configuración de visualización
 - Configuración de pandas
 - Verificación de versiones
-- Ejemplos básicos de análisis de datos
-- Funciones útiles predefinidas
+- Exploración de la estructura del dataset local
+- Carga de configuración YOLO desde `data.yaml`
+- Construcción de un DataFrame de anotaciones (`split`, `class_id`, `x_center`, `y_center`, `width`, `height`, `area`, `aspect_ratio`)
+- Estadísticas descriptivas y validación de datos faltantes
+- Análisis visual preliminar:
+  - Distribución de clases (total y por split)
+  - Distribución de dimensiones de bounding boxes
+  - Distribución espacial de centros
+  - Número de anotaciones por imagen
+  - Matriz de correlación de variables geométricas
+  - Muestras de imágenes con bounding boxes superpuestos
+
+### Estructura Esperada del Dataset
+
+El notebook detecta de forma automática la ruta del dataset y soporta la estructura anidada actual:
+
+```text
+nuevo-dataset/
+└── high-throughput-algae-cell-detection/
+   └── versions/
+      └── 3/
+         ├── data.yaml
+         ├── train/
+         │   └── train/
+         │       ├── images/
+         │       └── labels/
+         └── test/
+            └── test/
+               ├── images/
+               └── labels/
+```
+
+Para ubicar los datos, el notebook escanea carpetas `labels` de forma recursiva y las empareja con su carpeta hermana `images`.
 
 ## Estructura del Proyecto
 
 ```
 semillero-de-investigacion-2026/
-├── README.md                      # Este archivo
-├── inicializacion_basica.ipynb   # Notebook de inicialización
-├── requirements.txt              # Dependencias del proyecto
-└── datos/                        # Directorio para datasets (crear según necesidad)
+├── README.md
+├── requirements.txt
+├── datos/
+├── docs/
+└── nuevo-dataset/
+   ├── inicialización_datos_nuevodataset.ipynb
+   └── high-throughput-algae-cell-detection/
 ```
 
 ## Contribuir

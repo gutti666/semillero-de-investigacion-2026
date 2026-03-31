@@ -1,0 +1,1 @@
+Al ejecutar la primera celda del libro Jupyter de "Inicialización_datos_nuevodataset.ipynb", se descargará e instalará el dataset de pruebas sugerido por el docente en la carpeta de "high-throughput-algae-cell-detection" donde se encontrará la información necesaria para realizar el estudio desarrollado en el ya mencionado libnro jupyter.
