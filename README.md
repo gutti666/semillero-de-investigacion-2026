@@ -1,4 +1,9 @@
 # Semillero de Investigación 2026
+
+<p align="center">
+  <img src="./Flyer_Investigación_Microalgas.png" alt="Flyer del proyecto de investigación en microalgas" width="800" />
+</p>
+
 Repositorio del semillero enfocado en proyectos de ciencia de datos y machine learning aplicados a análisis de datos biológicos.
 
 ## Descripción
@@ -253,18 +258,6 @@ gantt
         Socialización de hallazgos con el semillero :08/26/26, 08/27/26
         Informe final de cierre del proyecto :08/28/26, 08/31/26
 ```
-
-
-
-## Preguntas Semillero
-
-**1.** Hemos encontrado que, en las variables Mascara R-G-B y H-S-V del archivo datos_espirulina.csv, la mayoría de los valores son 0. ¿Sería posible que nos proporcionen un dataset más limpio y con los datos más completos?
-   
-**2.** En relación con la data de la Spirulina, ¿podemos contar con una definición clara y detallada de cada variable?
-   
-**3.** Durante el análisis se observaron valores con rangos amplios y potencialmente inválidos en varias variables. ¿Qué criterios o rangos fisiológicamente aceptables (por ejemplo, pH 1–14, límites máximos de humedad o turbidez) deberían establecerse para identificar y corregir valores atípicos o fuera de rango, considerando que la Espirulina es altamente alcalina y se desarrolla en temperaturas cálidas?
-   
-**4.** En el análisis exploratorio se observó que turb_% presenta un 70% de datos nulos y una correlación de -0.9997 con turb_crudo_V. ¿Es posible utilizar esta relación para recalcular o reconstruir los valores faltantes durante la etapa de limpieza de datos?
 
 ## Configuración del Entorno
 
