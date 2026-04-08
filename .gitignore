@@ -54,3 +54,6 @@ obj/
 *~
 .github/
 .ipynb_checkpoints/
+
+# Dataset and model files
+high-throughput-algae-cell-detection
