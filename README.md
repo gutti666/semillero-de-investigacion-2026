@@ -1,5 +1,4 @@
-# Semillero de Investigación 2026
-Repositorio del semillero enfocado en proyectos de ciencia de datos y machine learning aplicados a análisis de datos biológicos.
+# Semillero de Investigación 2026Repositorio del semillero enfocado en proyectos de ciencia de datos y machine learning aplicados a análisis de datos biológicos.
 
 ## Descripción
 
@@ -55,37 +54,37 @@ gantt
 
     section Semana 6
     Reestructuración Estratégica :done, 03/18/26, 03/20/26
-        Desvinculación de los datasets de sensores por Complejidad Insostenible y Baja Calidad :03/18/26, 03/20/26
-        Pivotaje - Adopción del dataset High-Throughput Algae Cell Detection :03/18/26, 03/20/26
+    Desvinculación de los datasets de sensores por Complejidad Insostenible y Baja Calidad :03/18/26, 03/20/26
+    Pivotaje - Adopción del dataset High-Throughput Algae Cell Detection :03/18/26, 03/20/26
 
     section Semana 7
     Reconfiguración del proyecto :done, 03/21/26, 03/25/26
-        Reconfiguración del Repositorio Documentado 2.0 :03/21/26, 03/21/26
-        Diseño del Cronograma Final :03/22/26, 03/23/26
-        Estudio de las 6 nuevas clases de microalgas :03/24/26, 03/24/26
-        Revisión de soluciones y arquitecturas :03/25/26, 03/25/26
-            YOLO (detección multiclase en tiempo real) :03/25/26, 03/25/26
-            CNN (clasificación de imágenes) :03/25/26, 03/25/26
-            SVM (clasificación supervisada) :03/25/26, 03/25/26
-            LSTM (series temporales para crecimiento) :03/25/26, 03/25/26
-            U-Net (segmentación de imágenes) :03/25/26, 03/25/26
-            Faster R-CNN (red neuronal convolucional basada en regiones) :03/25/26, 03/25/26
-            Comparación preliminar de ventajas y limitaciones de cada enfoque :03/25/26, 03/25/26
+    Reconfiguración del Repositorio Documentado 2.0 :03/21/26, 03/21/26
+    Diseño del Cronograma Final :03/22/26, 03/23/26
+    Estudio de las 6 nuevas clases de microalgas :03/24/26, 03/24/26
+    Revisión de soluciones y arquitecturas :03/25/26, 03/25/26
+    YOLO (detección multiclase en tiempo real) :03/25/26, 03/25/26
+    CNN (clasificación de imágenes) :03/25/26, 03/25/26
+    SVM (clasificación supervisada) :03/25/26, 03/25/26
+    LSTM (series temporales para crecimiento) :03/25/26, 03/25/26
+    U-Net (segmentación de imágenes) :03/25/26, 03/25/26
+    Faster R-CNN (red neuronal convolucional basada en regiones) :03/25/26, 03/25/26
+    Comparación preliminar de ventajas y limitaciones de cada enfoque :03/25/26, 03/25/26
 
     section Semana 8
     Estudio y análisis del nuevo dataset :done, 03/26/26, 03/31/26
-        Replicación técnica en Jupyter Notebook :03/26/26, 03/27/26
-            Descarga y organización del dataset Kaggle :03/26/26, 03/27/26
-            Limpieza inicial de datos :03/26/26, 03/27/26
-            Train–test split :03/26/26, 03/27/26
-        Análisis exploratorio profundo (EDA) :03/28/26, 03/29/26
-            Distribución de clases (balance/desbalance) :03/28/26, 03/29/26
-            Identificación de nulos, duplicados y rangos inválidos :03/28/26, 03/29/26
-            Visualización de ejemplos por clase :03/28/26, 03/29/26
-            Estudio de variabilidad morfológica y condiciones de captura :03/28/26, 03/29/26
-        Informe de cierre de fase :03/30/26, 03/31/26
-            Registro de hallazgos iniciales :03/30/26, 03/31/26
-            Informe exploratorio preliminar :03/30/26, 03/31/26
+    Replicación técnica en Jupyter Notebook :03/26/26, 03/27/26
+    Descarga y organización del dataset Kaggle :03/26/26, 03/27/26
+    Limpieza inicial de datos :03/26/26, 03/27/26
+    Train–test split :03/26/26, 03/27/26
+    Análisis exploratorio profundo (EDA) :03/28/26, 03/29/26
+    Distribución de clases (balance/desbalance) :03/28/26, 03/29/26
+    Identificación de nulos, duplicados y rangos inválidos :03/28/26, 03/29/26
+    Visualización de ejemplos por clase :03/28/26, 03/29/26
+    Estudio de variabilidad morfológica y condiciones de captura :03/28/26, 03/29/26
+    Informe de cierre de fase :03/30/26, 03/31/26
+    Registro de hallazgos iniciales :03/30/26, 03/31/26
+    Informe exploratorio preliminar :03/30/26, 03/31/26
 ```
 ```mermaid
 gantt
