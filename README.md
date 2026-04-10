@@ -56,7 +56,7 @@ gantt
     section Semana 6
     Reestructuración Estratégica :done, 03/18/26, 03/20/26
         Desvinculación de los datasets de sensores por Complejidad Insostenible y Baja Calidad :03/18/26, 03/20/26
-        Pivotaje: Adopción del dataset High-Throughput Algae Cell Detection :03/18/26, 03/20/26
+        Pivotaje - Adopción del dataset High-Throughput Algae Cell Detection :03/18/26, 03/20/26
 
     section Semana 7
     Reconfiguración del proyecto :done, 03/21/26, 03/25/26
