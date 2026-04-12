@@ -47,6 +47,17 @@ app.add_middleware(
 app.include_router(detect_router, tags=["Detección"])
 
 
+# ── Endpoint raíz ─────────────────────────────────────────────────────────
+@app.get("/", summary="Estado del servidor", tags=["General"])
+async def root():
+    """Confirma que el servidor está activo y retorna la versión de la API."""
+    return {
+        "status": "ok",
+        "message": "Servidor de detección de microalgas en línea 🔬",
+        "version": app.version,
+        "docs": "/docs",
+    }
+
 # ── Arranque: validar configuración de HUB ────────────────────────────────
 @app.on_event("startup")
 async def _check_hub_config():

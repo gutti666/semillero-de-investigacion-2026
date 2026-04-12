@@ -1,0 +1,44 @@
+# ── Archivos que Vercel NO debe incluir en el bundle ──────────────────────
+# Solo se necesita: api/, backend/ (código), vercel.json, backend/requirements.txt
+
+# Notebooks y scripts de preparación de datos
+*.ipynb
+prepare_*.py
+mosaic_*.py
+rccn-*.py
+plan_*.py
+
+# Datasets (muy pesados — se usan solo para entrenamiento)
+cls_dataset/
+det_dataset/
+backend/cls_dataset/
+backend/VisAlage2023/
+
+# Resultados de entrenamiento y visualizaciones
+runs/
+visualizaciones/
+
+# Modelos locales (la inferencia se hace en Ultralytics HUB)
+*.pt
+*.onnx
+*.engine
+*.torchscript
+backend/models/
+
+# Entornos virtuales y dependencias locales
+.venv/
+venv/
+node_modules/
+
+# Archivos del sistema y temporales
+.DS_Store
+__pycache__/
+*.py[cod]
+*.zip
+*.tar.gz
+1
+
+# CI/CD y configuración de otros servicios (no necesaria en el bundle)
+docker-compose.yml
+backend/Dockerfile
+.github/

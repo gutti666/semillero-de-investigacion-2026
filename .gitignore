@@ -52,8 +52,12 @@ obj/
 # OS
 *.swp
 *~
-.github/
+.github/agents/
+.github/skills
 .ipynb_checkpoints/
+backend/.vercel/
+.vercel/
+/backend/.vercelignore
 
 # Dataset and model files
 high-throughput-algae-cell-detection
