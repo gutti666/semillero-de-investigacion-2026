@@ -1,5 +1,5 @@
 # ── Archivos que Vercel NO debe incluir en el bundle ──────────────────────
-# Solo se necesita: api/, backend/ (código), vercel.json, backend/requirements.txt
+# Se incluye: api/, backend/ (solo código), vercel.json
 
 # Notebooks y scripts de preparación de datos
 *.ipynb
@@ -18,7 +18,7 @@ backend/VisAlage2023/
 runs/
 visualizaciones/
 
-# Modelos locales (la inferencia se hace en Ultralytics HUB)
+# Modelos locales (la inferencia es remota en Ultralytics HUB)
 *.pt
 *.onnx
 *.engine
@@ -38,7 +38,8 @@ __pycache__/
 *.tar.gz
 1
 
-# CI/CD y configuración de otros servicios (no necesaria en el bundle)
+# CI/CD y Docker (no necesarios en el lambda)
 docker-compose.yml
 backend/Dockerfile
 .github/
+
