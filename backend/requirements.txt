@@ -1,0 +1,9 @@
+# ── Backend — API de Detección de Microalgas ───────────────────────────────
+# Inferencia remota vía Ultralytics HUB (no se carga el modelo localmente)
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+opencv-python-headless>=4.9.0
+pillow>=10.0.0
+pydantic>=2.0.0
+httpx>=0.27.0

@@ -1,0 +1,10 @@
+# Coloca aquí tu modelo descargado desde Ultralytics Hub.
+# El archivo debe llamarse best.pt (o actualiza MODEL_WEIGHTS en config.py).
+#
+# Para descargar desde Ultralytics Hub:
+#   1. Ve a https://hub.ultralytics.com
+#   2. Abre tu proyecto → Experiments → elige el run
+#   3. Descarga "Best" → guarda como best.pt en esta carpeta
+#
+# Estructura esperada:
+#   backend/models/best.pt
