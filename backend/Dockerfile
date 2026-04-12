@@ -12,8 +12,9 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiar código fuente
-COPY . .
+# Copiar código fuente dentro de un paquete backend/
+# para que los imports "from backend.xxx" funcionen correctamente
+COPY . ./backend/
 
 EXPOSE 8000
 
