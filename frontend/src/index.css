@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-white font-sans;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, #0d3320 0%, transparent 60%);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #00e5b0 0%, #28f07c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 20px #00e5b066, 0 0 60px #00e5b022;
+  }
+
+  .glow-btn {
+    box-shadow: 0 4px 20px #00e5b055;
+  }
+}
