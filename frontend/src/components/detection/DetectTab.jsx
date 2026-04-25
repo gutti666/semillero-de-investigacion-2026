@@ -31,7 +31,7 @@ export default function DetectTab() {
     : null
 
   return (
-    <section className="space-y-0">
+    <section>
       <DropZone onFile={handleFile} icon="🔭" disabled={isPending} />
 
       {/* Controls */}
